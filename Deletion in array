@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+
+//display function where traversal takes place
+void display(int arr[], int n){
+    for(int i=0; i<n; i++){
+        printf("%d ",arr[i]);
+    }
+    printf("\n");
+}
+
+
+
+//delete function
+int indDeletion(int arr[],int size,int element,int capacity,int index)
+{
+    for(int i=index;i<size-1;i++){
+        arr[i] = arr[i+1];
+    }
+    
+}
+
+
+
+
+//the main function
+int main()
+{
+    int arr[100] = {7, 8, 12, 27,45, 88} ;  //declaring array of 100 mem loc and filling 5 spaces
+    int size=6,index=4,element=45;
+    display(arr,size);
+    indDeletion(arr,size,element,100,index);
+    size -= 1;
+    display(arr,size);
+    return 0;
+}
