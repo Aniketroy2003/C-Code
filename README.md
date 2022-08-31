@@ -1,2 +1,2 @@
-# C-Code
-Dsa in c and some other programs to be stored here
+# C/C++-Code
+practice of c and c++ stored here
